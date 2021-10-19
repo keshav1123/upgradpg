@@ -91,7 +91,7 @@ public class RegisterService {
         newUser.setGender(user.getGender());
         newUser.setAddress(user.getAddress());
         newUser.setDateOfBirth(getDateFromString(user.getDateOfBirth()));
-        newUser.setStatus(AccountStatus.APPROVED);
+        newUser.setStatus(AccountStatus.INITIATED);
         User updatedUser = userService.saveInDatabase(newUser);
 
 
@@ -164,7 +164,7 @@ public class RegisterService {
         newUser.setGender(user.getGender());
         newUser.setAddress(user.getAddress());
         newUser.setDateOfBirth(getDateFromString(user.getDateOfBirth()));
-        newUser.setStatus(AccountStatus.APPROVED);
+        newUser.setStatus(AccountStatus.INITIATED);
         User updatedUser = userService.saveInDatabase(newUser);
 
 
